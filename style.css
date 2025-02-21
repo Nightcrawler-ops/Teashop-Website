@@ -1,0 +1,233 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: black;
+}
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    background-color: black;
+    font-family: Arial, Helvetica, sans-serif;
+    color: seashell;
+    height: 60px, auto;
+    width: 100%;
+    z-index: 1000; /* Ensure it stays on top */
+}
+
+.logo {
+    float: left;
+    margin-left: 10px;
+    margin-top: 10px;
+    height: 35px;
+    width: 100px;
+    opacity: 0.9;
+}
+
+nav {
+    float: right;
+    margin-right: 10px;
+    margin-top: 10px;
+    opacity: 0.9;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+}
+
+nav ul li {
+    margin-left: 20px;
+}
+
+nav ul li a {
+    text-decoration: underline;
+    font-weight: bold;
+    color: seashell;
+}
+
+.hero {
+    background-image: url('https://content.codecademy.com/courses/freelance-1/unit-4/img-mission-background.jpg'); /* Add image path */
+    background-size: cover;
+    height: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0.9;
+}
+
+.hero-text {
+    text-align: center;
+    color: seashell;
+    background-color: black;
+    width: 100%;
+    padding: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+    margin-top: 50px
+}
+
+.tea-of-the-month {
+    color: seashell;
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 40px;
+    text-align: center;
+    margin-top: 1px;
+}
+
+.tea-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.tea-item {
+    color: seashell;
+    width: 300px;
+    height: 200px;
+    padding: 20px;
+    text-align: center;
+    border-radius: 10px;
+    margin: 10px;
+    display: inline-block; /* Ensure items are displayed next to each other */
+}
+
+.tea-item img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+.tea-item img:hover {
+    transition: all 0.3s ease;
+    transform: scale(1.1);
+}
+
+.tea-item span {
+    font-weight: bold;
+    font-size: 15px;
+    display: block;
+    margin-top: 10px;
+}
+
+/* Locations Section */
+.locations {
+    background-image: url('https://content.codecademy.com/courses/freelance-1/unit-4/img-locations-background.jpg'); /* Add image path */
+    color: seashell;
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 10px;
+    text-align: center;
+    margin-top: 1px;
+    height: auto;
+    justify-content: center;
+    opacity: 0.7;
+}
+
+.locations h1 {
+    text-align: center;
+    font-size: 40px;
+    margin-bottom: 30px;
+    color: white;
+    padding: 5px;
+    font-family: Arial, Helvetica, sans-serif;
+    position: relative;
+    width: 100%;
+}
+
+.locations h4 {
+    font-size: 25px;
+    margin-bottom: 30px;
+    color: seashell;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+}
+
+.location-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.location {
+    text-align: center;
+    color: seashell;
+    background-color: black;
+    padding: 10px;
+    border-radius: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;;
+    display: inline-block;
+    margin: 15px;
+    height: 250px;
+}
+
+.location:hover {
+    transition: all 0.3s ease;
+    transform: scale(1.1);
+}
+
+.contact {
+    background-color: black;
+    color: seashell;
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 10px;
+    text-align: center;
+    height: auto;
+    justify-content: center;
+    margin: 5px;
+}
+
+footer {
+    background-color: black;
+    color: seashell;
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 10px;
+    text-align: center;
+    height: auto;
+    justify-content: center;
+    margin: 5px;
+}
+
+.left {
+    float: left;
+}
+.right {
+    float: right;
+}
+
+/* Media Queries */
+@media (max-width: 600px) {
+    .hero {
+        height: 300px;
+    }
+
+    .hero-text {
+        font-size: 12px;
+    }
+
+    .tea-item {
+        width: 100%;
+    }
+
+    .locations h1 {
+        font-size: 30px;
+    }
+
+    .locations h4 {
+        font-size: 20px;
+    }
+
+    .location {
+        width: 100%;
+    }
+}
