@@ -48,6 +48,7 @@ nav ul {
     padding: 0;
     margin: 0;
     display: flex;
+    flex: 1 5 0; /* Flexbox properties */
 }
 
 nav ul li {
@@ -161,7 +162,7 @@ nav ul li a {
 
 .location-content {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
     flex-wrap: wrap;
 }
